@@ -1,0 +1,78 @@
+*{
+    --color1: #101916;
+    --color2:#355245;
+    --color3:#afc186;
+    --color4:#648374;
+    --color5:#e3e5d8;
+    --font01:Marker Felt, fantasy;
+    --font02:cursive;
+    --font03:DejaVu Sans Mono, monospace;
+    --font04:Comic Sans MS, cursive;
+}
+body{
+    background:linear-gradient(180deg, var(--color2) ,var(--color1) , var(--color1));
+    /* color: var(--color5); */
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: rgba(255, 255, 255, 0.0); /* Transparent background */
+    color: black; /* Change text color to black for better contrast */
+    position: fixed; /* Make the nav bar floating */
+    top: 0;
+    width: 100%; /* Ensure it spans the full width of the page */
+    z-index: 1000;
+}
+
+#hedding {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+#hedding img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+#hedding h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#pages {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.0); /* Transparent background */
+    z-index: 1000;
+}
+
+
+.navbar {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color:var(--color1); /* Change link color to black for better contrast */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    font-size: 2rem;
+}

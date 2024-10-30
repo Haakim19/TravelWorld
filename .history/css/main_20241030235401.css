@@ -37,28 +37,16 @@ body{
     color: var(--color2);
     text-decoration: none;
     font-weight: 700;
-    animation: animation1 2s infinite;
-    animation-delay:0s;
 }
 .name span{
     color: var(--color1);
-    animation: animation2 2S infinite;
-    animation-delay:0s;
 }
-@keyframes animation1{
+@keyframes animation{
     From{
-        color: var(--color5);
+        border-color: var(--color5);
     }
     To{
-        color: var(--color1);
-    }
-}
-@keyframes animation2{
-    From{
-        color: var(--color1);
-    }
-    To{
-        color: var(--color5);
+        border-color: var(--color1);
     }
 }
 .navbar a{

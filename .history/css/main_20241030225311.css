@@ -1,0 +1,76 @@
+*{
+    --color1: #101916;
+    --color2:#355245;
+    --color3:#afc186;
+    --color4:#648374;
+    --color5:#e3e5d8;
+    --font01:Marker Felt, fantasy;
+    --font02:cursive;
+    --font03:DejaVu Sans Mono, monospace;
+    --font04:Comic Sans MS, cursive;
+}
+body{
+    background:linear-gradient(200deg, var(--color2) ,var(--color1) , var(--color1));
+    margin: 0;
+    padding: 0;
+}
+/* Styles for the header section */
+#hedding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Change to space-between for proper alignment */
+    padding: 40px 20px; /* Combined padding for cleaner code */
+}
+
+/* Styles for the main heading */
+#hedding h1 {
+    color: var(--color5);
+    font-family: var(--font04);
+    font-size: 35px;
+    margin: 0; /* Remove default margin */
+}
+
+/* Styles for the span inside the heading */
+#hedding span {
+    color: var(--color1);
+}
+
+/* Styles for the nav section */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center nav items */
+    word-spacing: 5px;
+    padding: 0; /* Remove padding for centering */
+    position: relative; /* Positioning context */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Centering adjustment */
+}
+
+/* Styles for the navigation list */
+nav ul {
+    display: flex; /* Make ul a flex container */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styles for list items in the nav */
+nav ul li {
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+/* Styles for navigation links */
+nav ul li a {
+    color: var(--color5);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: var(--font03);
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    color: var(--color1);
+    transition: 0.3s;
+}

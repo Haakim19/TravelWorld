@@ -26,60 +26,63 @@ body{
     width: 100%;
     padding: 20px 100px;
     display: flex;
-    background:transparent;
     justify-content:space-between;
     align-items: center;
     z-index: 100;
 }
 .name{
-    font-family: "poppins", sans-serif;
+    font-family: var(--font03);
     font-size: 32px;
-    color: var(--color2);
+    color: var(--color4);
     text-decoration: none;
     font-weight: 700;
-    animation: animation1 2s infinite;
-    animation-delay:0s;
 }
 .name span{
     color: var(--color1);
-    animation: animation2 2S infinite;
-    animation-delay:0s;
 }
-@keyframes animation1{
-    From{
-        color: var(--color5);
-    }
-    To{
-        color: var(--color1);
-    }
+/* div #hedding{
+    display: flex;;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-@keyframes animation2{
-    From{
-        color: var(--color1);
-    }
-    To{
-        color: var(--color5);
-    }
+#hedding h1{
+    color: var(--color5);
+    font-family: var(--font04);
+    font-size: 35px;
+    flex: content;
+    gap: -20px;
+    padding-left: 10%;
+    padding-right: 10%; 
 }
-.navbar a{
-    position: relative;
-    font-size: 18px;
+#hedding span{
     color: var(--color1);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    word-spacing: 5px;
+    gap: 100px;
+    padding-left: 10%;
+    padding-right: 10%; 
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: var(--color3);
     text-decoration: none;
-    font-weight: 500;
-    margin-left: 55px;
+    font-weight: bold;
+    color: var(--color5);
+    font-size: 20px;
+    font-family: var(--font03);
 }
-.navbar a::before{
-    content: '';
-    position: absolute;
-    top: 100%;
-    width: 0;
-    left: 0;
-    height: 2.5px;
-    border-radius:100%;
-    background: var(--color1);
-}
-.navbar a:hover::before{
-    width: 100%;
+nav ul li a:hover{
+    color: var(--color1);
     transition: 0.3s;
-}
+}  */

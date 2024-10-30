@@ -1,0 +1,28 @@
+.navbar a {
+    color: black; /* Change link color to black for better contrast */
+    text-decoration: none;
+    font-size: 18px;
+    position: relative; /* Required for the ::after pseudo-element */
+}
+
+.navbar a::after {
+    content: attr(data-tooltip); /* Use the data-tooltip attribute for the tooltip text */
+    position: absolute;
+    bottom: 100%; /* Position above the link */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    font-size: 14px;
+}
+
+.navbar a:hover::after {
+    opacity: 1;
+    visibility: visible;
+}

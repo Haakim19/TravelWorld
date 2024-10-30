@@ -37,27 +37,19 @@ body{
     color: var(--color2);
     text-decoration: none;
     font-weight: 700;
-    animation: animation1 2s infinite;
-    animation-delay:0s;
+    animation: animation 5s infinite;
 }
 .name span{
     color: var(--color1);
-    animation: animation2 2S infinite;
-    animation-delay:0s;
+    animation: animation 5s infinite;
 }
-@keyframes animation1{
+@keyframes animation{
     From{
         color: var(--color5);
+        /* color: var(--color1); */
     }
     To{
         color: var(--color1);
-    }
-}
-@keyframes animation2{
-    From{
-        color: var(--color1);
-    }
-    To{
         color: var(--color5);
     }
 }

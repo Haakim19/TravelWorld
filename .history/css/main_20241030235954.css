@@ -38,12 +38,12 @@ body{
     text-decoration: none;
     font-weight: 700;
     animation: animation1 2s infinite;
-    animation-delay:0s;
+    animation-delay:0ms;
 }
 .name span{
     color: var(--color1);
     animation: animation2 2S infinite;
-    animation-delay:0s;
+    animation-delay:0ms;
 }
 @keyframes animation1{
     From{
