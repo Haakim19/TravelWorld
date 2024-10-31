@@ -64,11 +64,11 @@ body{
     }
 }
 .navbar a{
-    background:none;
+    background:white;
     padding-left: 10px;
-    padding-right: 15px;
+    padding-right: 20px;
     border-radius: 10px;
-   
+    box-shadow: inset 2px 1px rgba(0,0,0,0.1);
     position: relative;
     font-size: 22px;
     color: var(--color1);
@@ -76,11 +76,7 @@ body{
     font-weight: 500;
     margin-left: 55px;
 }
-.navbar a:hover{
-    background: var(--color2);
-    transition: 0.3s;
-}
-/* .navbar a::before{
+.navbar a::before{
     content: '';
     position: absolute;
     top: 100%;
@@ -93,7 +89,7 @@ body{
 .navbar a:hover::before{
     width: 100%;
     transition: 0.3s;
-} */
+}
 .main-content{
     display: flex;
     justify-content: space-between;

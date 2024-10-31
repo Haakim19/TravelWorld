@@ -63,24 +63,21 @@ body{
         color: var(--color5);
     }
 }
-.navbar a{
-    background:none;
-    padding-left: 10px;
-    padding-right: 15px;
+.navbar{
+    background:white;
+    padding-left: -40px;
+    padding-right: 50px;
     border-radius: 10px;
-   
+}
+.navbar a{
     position: relative;
-    font-size: 22px;
+    font-size: 25px;
     color: var(--color1);
     text-decoration: none;
     font-weight: 500;
     margin-left: 55px;
 }
-.navbar a:hover{
-    background: var(--color2);
-    transition: 0.3s;
-}
-/* .navbar a::before{
+.navbar a::before{
     content: '';
     position: absolute;
     top: 100%;
@@ -93,7 +90,7 @@ body{
 .navbar a:hover::before{
     width: 100%;
     transition: 0.3s;
-} */
+}
 .main-content{
     display: flex;
     justify-content: space-between;

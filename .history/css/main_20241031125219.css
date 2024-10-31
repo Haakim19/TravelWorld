@@ -64,23 +64,14 @@ body{
     }
 }
 .navbar a{
-    background:none;
-    padding-left: 10px;
-    padding-right: 15px;
-    border-radius: 10px;
-   
     position: relative;
-    font-size: 22px;
+    font-size: 18px;
     color: var(--color1);
     text-decoration: none;
     font-weight: 500;
     margin-left: 55px;
 }
-.navbar a:hover{
-    background: var(--color2);
-    transition: 0.3s;
-}
-/* .navbar a::before{
+.navbar a::before{
     content: '';
     position: absolute;
     top: 100%;
@@ -93,7 +84,7 @@ body{
 .navbar a:hover::before{
     width: 100%;
     transition: 0.3s;
-} */
+}
 .main-content{
     display: flex;
     justify-content: space-between;
@@ -169,17 +160,9 @@ footer #icon img{
     margin-bottom: 5px;
     margin-top: 0%;
     font-family: var(--font04);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: 2px;
-    text-decoration: underline;
-}
-.overlay p{
-    margin-bottom: 10px;
-    font-family: var(--font03);
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 1px;
 }
 .overlay a{
     margin-top: 10px;
@@ -200,6 +183,6 @@ footer #icon img{
 .box:hover img{
     filter: blur(5px);
 }
-.box a:hover{
+a:hover{
     background:linear-gradient(45deg, var(--color2), var(--color3));
 }
