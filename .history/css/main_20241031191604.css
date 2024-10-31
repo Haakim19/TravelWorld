@@ -19,7 +19,7 @@ body{
 
 }
 .header{
-    position: sticky;
+    position: static;
     /* position:static; */
     top: 0;
     left: 0;
@@ -99,8 +99,8 @@ body{
     transition: 0.1s;
 }
 
-footer{
-    position: relative;
+footer {
+    position: absolute;
 }
 
 footer #icon img{

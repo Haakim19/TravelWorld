@@ -1,4 +1,7 @@
-
+main {
+    /* position: absolute; */
+    top: 0;
+}
 .wrapper{
     padding: 10px 10px;
 }

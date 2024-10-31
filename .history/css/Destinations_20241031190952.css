@@ -1,4 +1,17 @@
+main {
+    position: absolute;
+    top: 100px;
+}
 
+
+footer {
+    position: absolute;
+}
+
+footer #icon img{
+    width: 50px;
+    height: 50px;
+}
 .wrapper{
     padding: 10px 10px;
 }
@@ -7,7 +20,6 @@
 }
 .box-area{
     display:grid;
-
     grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
     grid-gap: 40px;
     margin-top: 50px;
@@ -80,5 +92,12 @@
     filter: blur(10px) grayscale(80%);
 }
 .box a:hover{
-    background: linear-gradient(135deg, var(--color1), var(--color3));
+    background: linear-gradient(180deg, var(--color1), var(--color3));
+}
+
+
+@media (max-width: 900px){
+    .header{
+        flex-direction: column;
+    }
 }
