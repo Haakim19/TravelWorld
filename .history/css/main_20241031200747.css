@@ -14,7 +14,7 @@ body{
     /* background: url('https://i.pinimg.com/564x/c7/36/f8/c736f83436d84ddc039fe42de40c8ec7.jpg'); */
     /* background:url('../assets/beach.jpg') no-repeat; */
     background-size: cover;
-    background:#010303;
+    background:hsla(0, 0%, 4%, 0.881);
     background-position: center top;
     background-attachment: fixed;
 
@@ -22,7 +22,7 @@ body{
 .header{
     position: sticky;
     /* position:static; */
-    top: 30px;
+    top: 100px;
     left: 0;
     width: 100%;
     padding: 20px 100px;
@@ -36,22 +36,20 @@ body{
 .name{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font:italic;
-    box-shadow: 5px 5px 15px #5C9492;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.4);
     font-size: 35px;
     padding: 5px 10px 5px 10px;
     border-radius:25px;
-    color: #31817e;
+    color: var(--color1);
     text-decoration: none;
     font-weight: 900;
     animation: animation1 2s infinite;
     animation-delay:0s;
 }
 .name span{
-    color: #000000;
+    color: #ffffff;
     animation: animation2 2s infinite;
     animation-delay:0s;
-    text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255),
-    1px 1px 0 rgb(255, 255, 255);
 }
 /* @keyframes animation1{
     From{
@@ -82,7 +80,7 @@ body{
     background:none;
     padding: 8px 15px 8px 15px;
     border-radius: 20px;
-    box-shadow: 5px 5px 15px #5C9492;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.5);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: static;
     font-size: 18px;
@@ -124,88 +122,4 @@ footer #icon img{
     .navbar{
         gap: 25px;
     }
-}
-
-.wrapper{
-    padding: 10px 10px;
-}
-#card-area{
-    padding: 50px 0;
-}
-.box-area{
-    display:grid;
-
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.box{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
-}
-.box img{
-    width: 150%;
-    border-radius: 10px;
-    display: block;
-    height: 100%;
-    transition: trnsform 0.5s;
-    filter: blur(0);
-}
-.overlay{
-    height: 0;
-    min-width: 100%;
-    background:hsla(0, 0%, 100%, 0.3);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
-}
-.overlay h3{
-    margin-bottom: 5px;
-    margin-top: 0%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 2px;
-}
-.overlay p{
-    margin-bottom: 10px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--color2);
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-.overlay a{
-    margin-top: 10px;
-    color: #101916;
-    text-decoration: none;
-    font-size: 14px;
-    background: var(--color3);
-    padding: 5px 15px;
-    border-radius: 50px;
-    text-align: center;
-}
-.box :hover img{
-    transform: scale(5.0);
-}
-.box:hover .overlay{
-    height: 50%;
-}
-.box:hover img{
-    filter: blur(10px) grayscale(80%);
-}
-.box a:hover{
-    background: linear-gradient(135deg, var(--color1), var(--color3));
 }
