@@ -22,7 +22,7 @@ body{
 }
 .header{
 
-    position:static;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -69,7 +69,7 @@ body{
     padding-right: 15px;
     border-radius: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: static;
+    position: relative;
     font-size: 22px;
     color: var(--color1);
     text-decoration: none;
@@ -128,7 +128,7 @@ footer #icon img{
 }
 .box-area{
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(370px, 4fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -172,11 +172,12 @@ footer #icon img{
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 2px;
+    text-decoration: underline;
 }
 .overlay p{
     margin-bottom: 10px;
     font-family: var(--font04);
-    color: var(--color4);
+    color: hsl(2, 66%, 67%);
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -198,8 +199,8 @@ footer #icon img{
     height: 50%;
 }
 .box:hover img{
-    filter: blur(15px) grayscale(80%);
+    filter: blur(5px) grayscale(100%);
 }
 .box a:hover{
-    background:linear-gradient(180deg, var(--color2), var(--color3));
+    background:linear-gradient(45deg, var(--color2), var(--color3));
 }
